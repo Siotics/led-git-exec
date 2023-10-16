@@ -1,6 +1,0 @@
-#line 1 "/home/ryo/Programming/IOT/led-git-exec/.vscode/arduino.json"
-{
-    "sketch": "led-git-exec.ino",
-    "output": "build",
-    "board": "arduino:avr:uno"
-}
