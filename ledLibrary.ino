@@ -18,3 +18,8 @@ void TurnLoop(uint8_t start, uint8_t end, int increment)
         digitalWrite(i, 0);
     }
 }
+
+int ChangePointer(int &source, int change)
+{
+    return source = change;
+}
