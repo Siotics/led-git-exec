@@ -3,5 +3,13 @@ void setup() {
 }
 
 void loop(){
-    Serial.Println("Aku sesat");
+    chocolate();
+}
+
+void chocolate(int x){
+    x = 1;
+    Serial.print("Tampilkan = ");
+    Serial.println(x);
+    delay(500);
+    x = x + 1;
 }
