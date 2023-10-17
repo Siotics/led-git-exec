@@ -3,11 +3,10 @@ void setup() {
 }
 
 void loop(){
-    chocolate(x);
+    chocolate(1);
 }
 
 void chocolate(int x){
-    x = 1;
     Serial.print("Tampilkan = ");
     Serial.println(x);
     delay(500);
