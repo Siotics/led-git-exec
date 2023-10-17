@@ -3,7 +3,7 @@ void setup() {
 }
 
 void loop(){
-    chocolate();
+    chocolate(x);
 }
 
 void chocolate(int x){
