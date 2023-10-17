@@ -1,3 +1,7 @@
 void setup() {
-    <p> Hello World </p>
+    Serial.begin(9600);
+}
+
+void loop(){
+    Serial.Println("Aku sesat");
 }
