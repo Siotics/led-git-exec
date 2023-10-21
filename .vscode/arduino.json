@@ -1,5 +1,4 @@
 {
-    "sketch": "led-git-exec.ino",
-    "output": "../build",
-    "board": "arduino:avr:uno"
+    "board": "arduino:avr:uno",
+    "sketch": "led-git-exec\\initiates\\Syaddad_RPL_Hello.ino"
 }
