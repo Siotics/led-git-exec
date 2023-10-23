@@ -9,6 +9,6 @@ void loop() {
         Serial.println("perulangan ke-");
         Serial.println(count);
         count++;
-        delay(1000)
+        delay(1000);
     }
 }
