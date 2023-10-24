@@ -1,25 +1,21 @@
 //LED TRAFFIC LIGHT
-const short unsigned merah = 4, kuning = 3, hijau = 2;
-
-void setup()
-{
-  pinMode(merah, OUTPUT);  
-  pinMode(kuning, OUTPUT);
-  pinMode(hijau, OUTPUT);
+void setup(){
+  pinMode(2, OUTPUT);  
+  pinMode(3, OUTPUT);
+  pinMode(4, OUTPUT);
 }
-
-void loop()
-{
-  digitalWrite(merah, 1);
-  digitalWrite(kuning, 0);
-  delay(2500);
-  digitalWrite(kuning, 1);
-  digitalWrite(merah, 0);
-  delay(2500);
-  digitalWrite(hijau, 1);
-  digitalWrite(kuning, 0);
-  delay(2500);
-  digitalWrite(kuning, 1);
-  digitalWrite(hijau, 0);
-  delay(2500);
+void revisiLampu(int LAMPU, int lamaWaktu){
+    digitalWrite(2, LOW);
+    digitalWrite(3, LOW);
+    digitalWrite(4, LOW);
+    digitalWrite(LAMPU);
+    delay(lamaWaktu);
+    digitalWrite(LAMPU);
 }
+void loop(){
+    revisiLampu(2, 3000);
+    revisiLampu(3, 1000);
+    revisiLampu(4, 3000);
+    revisiLampu(2, 1000);
+}
+//REVISI TERUS NGAB
