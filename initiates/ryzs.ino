@@ -1,14 +1,21 @@
-void setup() {
-    Serial.begin(9600);
+//LED TRAFFIC LIGHT
+void setup(){
+  pinMode(2, OUTPUT);  
+  pinMode(3, OUTPUT);
+  pinMode(4, OUTPUT);
 }
-
+void revisiLampu(int LAMPU, int lamaWaktu){
+    digitalWrite(2, LOW);
+    digitalWrite(3, LOW);
+    digitalWrite(4, LOW);
+    digitalWrite(LAMPU);
+    delay(lamaWaktu);
+    digitalWrite(LAMPU);
+}
 void loop(){
-    chocolate(1);
+    revisiLampu(2, 3000);
+    revisiLampu(3, 1000);
+    revisiLampu(4, 3000);
+    revisiLampu(2, 1000);
 }
-
-void chocolate(int x){
-    Serial.print("Tampilkan = ");
-    Serial.println(x);
-    delay(500);
-    x = x + 1;
-}
+//REVISI TERUS NGAB
