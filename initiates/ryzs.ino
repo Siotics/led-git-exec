@@ -16,6 +16,6 @@ void loop(){
     revisiLampu(2, 3000);
     revisiLampu(3, 1000);
     revisiLampu(4, 3000);
-    revisiLampu(2, 1000);
+    revisiLampu(3, 1000);
 }
 //REVISI TERUS NGAB
