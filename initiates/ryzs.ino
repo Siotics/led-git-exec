@@ -8,9 +8,9 @@ void revisiLampu(int LAMPU, int lamaWaktu){
     digitalWrite(2, LOW);
     digitalWrite(3, LOW);
     digitalWrite(4, LOW);
-    digitalWrite(LAMPU);
+    digitalWrite(LAMPU, HIGH);
     delay(lamaWaktu);
-    digitalWrite(LAMPU);
+    digitalWrite(LAMPU, LOW);
 }
 void loop(){
     revisiLampu(2, 3000);
