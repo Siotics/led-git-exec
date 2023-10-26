@@ -3,6 +3,6 @@ void setup() {
 }
 
 void loop() {
-    Serial.println("Hello ana ");
+    Serial.println("Hello World :)");
     delay(1000);
 }
